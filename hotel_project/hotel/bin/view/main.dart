@@ -82,43 +82,63 @@ void main(List<String> args) {
       switch (serviceNum) {
         case 1:
           bookingController.addNewBooking(adminLogin.id);
-          color('Enter 1 to exit ,2 to continue',
-              front: Styles.BG_LIGHT_GREEN, isBold: true);
-          int isExit = int.parse(stdin.readLineSync()!);
-          if (isExit == 1) {
-            color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
-            serviceDone = false;
+          try {
+            color('Enter 1 to exit ,2 to continue',
+                front: Styles.BG_LIGHT_GREEN, isBold: true);
+            int isExit = int.parse(stdin.readLineSync()!);
+            if (isExit == 1) {
+              color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
+              serviceDone = false;
+            }
+          } catch (e) {
+            color('Please enter 1 to exit ,2 to continue',
+                front: Styles.BG_RED, isBold: true);
           }
           break;
         case 2:
           bookingController.update();
           //
-          color('Enter 1 to exit ,2 to continue',
-              front: Styles.BG_LIGHT_GREEN, isBold: true);
-          int isExit = int.parse(stdin.readLineSync()!);
-          if (isExit == 1) {
-            color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
-            serviceDone = false;
+          try {
+            color('Enter 1 to exit ,2 to continue',
+                front: Styles.BG_LIGHT_GREEN, isBold: true);
+            int isExit = int.parse(stdin.readLineSync()!);
+            if (isExit == 1) {
+              color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
+              serviceDone = false;
+            }
+          } catch (e) {
+            color('Please enter 1 to exit ,2 to continue',
+                front: Styles.BG_RED, isBold: true);
           }
           break;
         case 3:
           bookingController.deleteBooking();
-          color('Enter 1 to exit ,2 to continue',
-              front: Styles.BG_LIGHT_GREEN, isBold: true);
-          int isExit = int.parse(stdin.readLineSync()!);
-          if (isExit == 1) {
-            color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
-            serviceDone = false;
+          try {
+            color('Enter 1 to exit ,2 to continue',
+                front: Styles.BG_LIGHT_GREEN, isBold: true);
+            int isExit = int.parse(stdin.readLineSync()!);
+            if (isExit == 1) {
+              color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
+              serviceDone = false;
+            }
+          } catch (e) {
+            color('Please enter 1 to exit ,2 to continue',
+                front: Styles.BG_RED, isBold: true);
           }
           break;
         case 4:
           bookingController.showBookingData();
-          color('Enter 1 to exit ,2 to continue',
-              front: Styles.BG_LIGHT_GREEN, isBold: true);
-          int isExit = int.parse(stdin.readLineSync()!);
-          if (isExit == 1) {
-            color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
-            serviceDone = false;
+          try {
+            color('Enter 1 to exit ,2 to continue',
+                front: Styles.BG_LIGHT_GREEN, isBold: true);
+            int isExit = int.parse(stdin.readLineSync()!);
+            if (isExit == 1) {
+              color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
+              serviceDone = false;
+            }
+          } catch (e) {
+            color('Please enter 1 to exit ,2 to continue',
+                front: Styles.BG_RED, isBold: true);
           }
           break;
         case 5:
@@ -126,56 +146,83 @@ void main(List<String> args) {
               front: Styles.BG_LIGHT_GREEN, isBold: true);
           String input = stdin.readLineSync()!;
           bookingController.searchByUser(input);
-          color('Enter 1 to exit ,2 to continue',
-              front: Styles.BG_LIGHT_GREEN, isBold: true);
-          int isExit = int.parse(stdin.readLineSync()!);
-          if (isExit == 1) {
-            color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
-            serviceDone = false;
+          try {
+            color('Enter 1 to exit ,2 to continue',
+                front: Styles.BG_LIGHT_GREEN, isBold: true);
+            int isExit = int.parse(stdin.readLineSync()!);
+            if (isExit == 1) {
+              color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
+              serviceDone = false;
+            }
+          } catch (e) {
+            color('Please enter 1 to exit ,2 to continue',
+                front: Styles.BG_RED, isBold: true);
           }
           break;
         case 6:
           userController.showUsers();
-          color('Enter 1 to exit ,2 to continue',
-              front: Styles.BG_LIGHT_GREEN, isBold: true);
-          int isExit = int.parse(stdin.readLineSync()!);
-          if (isExit == 1) {
-            color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
-            serviceDone = false;
+          try {
+            color('Enter 1 to exit ,2 to continue',
+                front: Styles.BG_LIGHT_GREEN, isBold: true);
+            int isExit = int.parse(stdin.readLineSync()!);
+            if (isExit == 1) {
+              color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
+              serviceDone = false;
+            }
+          } catch (e) {
+            color('Please enter 1 to exit ,2 to continue',
+                front: Styles.BG_RED, isBold: true);
           }
           break;
         case 7:
           roomController.showRoom();
-          color('Enter 1 to exit ,2 to continue',
-              front: Styles.BG_LIGHT_GREEN, isBold: true);
-          int isExit = int.parse(stdin.readLineSync()!);
-          if (isExit == 1) {
-            color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
-            serviceDone = false;
+          try {
+            color('Enter 1 to exit ,2 to continue',
+                front: Styles.BG_LIGHT_GREEN, isBold: true);
+            int isExit = int.parse(stdin.readLineSync()!);
+            if (isExit == 1) {
+              color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
+              serviceDone = false;
+            }
+          } catch (e) {
+            color('Please enter 1 to exit ,2 to continue',
+                front: Styles.BG_RED, isBold: true);
           }
           break;
         case 8:
           bookingController.removedBooking();
-          color('Enter 1 to exit ,2 to continue',
-              front: Styles.BG_LIGHT_GREEN, isBold: true);
-          int isExit = int.parse(stdin.readLineSync()!);
-          if (isExit == 1) {
-            color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
-            serviceDone = false;
+          try {
+            color('Enter 1 to exit ,2 to continue',
+                front: Styles.BG_LIGHT_GREEN, isBold: true);
+            int isExit = int.parse(stdin.readLineSync()!);
+            if (isExit == 1) {
+              color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
+              serviceDone = false;
+            }
+          } catch (e) {
+            color('Please enter 1 to exit ,2 to continue',
+                front: Styles.BG_RED, isBold: true);
           }
           break;
         case 9:
           adminController.showAdmin();
-          color('Enter 1 to exit ,2 to continue',
-              front: Styles.BG_LIGHT_GREEN, isBold: true);
-          int isExit = int.parse(stdin.readLineSync()!);
-          if (isExit == 1) {
-            color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
-            serviceDone = false;
+          try {
+            color('Enter 1 to exit ,2 to continue',
+                front: Styles.BG_LIGHT_GREEN, isBold: true);
+            int isExit = int.parse(stdin.readLineSync()!);
+            if (isExit == 1) {
+              color('Exit...', front: Styles.BG_LIGHT_GREEN, isBold: true);
+              serviceDone = false;
+            }
+          } catch (e) {
+            color('Please enter 1 to exit ,2 to continue',
+                front: Styles.BG_RED, isBold: true);
           }
+
           break;
         default:
-          color('this servic not found.', front: Styles.BG_RED, isBold: true);
+          color('this servic not found...Try again.',
+              front: Styles.BG_RED, isBold: true);
       }
     }
   }
